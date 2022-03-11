@@ -1,0 +1,38 @@
+.client__container{
+    max-width: 1200px;
+    margin: 3rem auto;
+    text-align: center;
+    .heading{
+        font-size: 50px;
+        font-weight: 700;
+        margin: 3rem 0;
+    }
+    .para{
+        font-size: 17px;
+        color: gray;
+        margin: 1rem 0;
+        font-weight: 600;
+    }
+    .imgs{
+       
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 1rem auto;
+        justify-content: space-evenly;
+           @media screen and (max-width:700px){
+            grid-template-columns: auto auto;
+
+
+        }
+           @media screen and (max-width:500px){
+            grid-template-columns: auto;
+
+
+        }
+
+        .img1{
+            height: 120px;
+            
+        }
+    }
+}

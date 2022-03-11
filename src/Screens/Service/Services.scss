@@ -1,0 +1,60 @@
+.service__container{
+    max-width: 1150px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 25px;
+    @media screen and (max-width: 600px) {
+        padding: 0 2rem;
+
+
+      }
+    .heading{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 28px;
+        margin: 2rem 0;
+    }
+    .cards{
+        display: flex;
+        // max-width: 1100px;
+        flex-wrap:wrap ;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        .card{
+            background: #fff;
+    border: 2px solid #f2f2f2;
+    padding: 30px 20px;
+    // margin: 0 15px;
+    // min-height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    // gap: 1rem;
+    text-align: start;
+    .card__logo{
+        height: 70px;
+        width: 60px;
+    }
+    .headingg{
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 1rem 0;
+    }
+    .paraa{
+        line-height: 35px;
+        color: #505050;
+        font-size: 18px;
+    }
+    .read{
+        cursor: pointer;
+        color: blue;
+        margin-top: 10px;
+    }
+        }
+    }
+}

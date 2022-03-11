@@ -1,0 +1,36 @@
+.navbar__container{
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 90px;
+    z-index: 200;
+    width: 100%;
+    .left{
+        .logo{
+            max-width: 215px;
+            height: 92px;
+        }
+
+    }
+    .right{
+        display: flex;
+        gap: 2rem;
+        @media screen and (max-width:600px){
+          display: none;
+
+
+        }
+        .link{
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.active{
+color: red !important;
+}
