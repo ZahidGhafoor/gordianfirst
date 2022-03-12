@@ -3,7 +3,7 @@ import "./NavBar.scss"
 import { NavLink } from "react-router-dom"
 
 
-import logo from "../../Assets/download.svg"
+import logo from "../../Assets/Logo.png"
 
 const NavBar = (props) => {
   console.log("navbar=====", props)
@@ -16,7 +16,7 @@ const NavBar = (props) => {
       <div className="right">
         <NavLink onClick={props.homescroll} to="/" className="link">Home</NavLink>
         <NavLink onClick={props.aboutscroll} to="/about" className="link">About</NavLink>
-        <NavLink onClick={props.servicescroll} to="/service" className="link">Services</NavLink>
+        <NavLink onClick={props.servicescroll} to="/service" className="link">Products</NavLink>
         <NavLink onClick={props.clientscroll} to="/client" className="link">Clients</NavLink>
         <NavLink onClick={props.contactscroll} to="/contact" className="link">Contact</NavLink>
 

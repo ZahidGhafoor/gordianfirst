@@ -2,7 +2,7 @@ import React from 'react'
 import "./Home.scss"
 
 // Imgs
-import main from "../../Assets/main4.jpg"
+import main from "../../Assets/main2.jpg"
 import NavBar from '../../Components/NavBar/NavBar'
 
 const Home = (props) => {
