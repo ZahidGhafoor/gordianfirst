@@ -40,7 +40,7 @@ const About = (props) => {
           </div>
           {/* </LightSpeed> */}
           <div className="para">
-            <div className="para1">We foresee the future, we originate ideas, we love challenges & we create the unbelievable.” - Plaxonic Technologies </div>
+            <div className="para1"><b><i>We foresee the future, we originate ideas, we love challenges & we create the unbelievable.</i></b> FS Highrise</div>
             <div className="para2">We are a young team of super nerds who love their work. Our modus operandi of ‘invent & innovate’ makes work a joy and challenges seem like play. Saying ‘we love what we do’ would be oversimplifying it because we not just ‘love’ but we ‘live’ for it. With such dedication and passion, no obstacle can slow down our pace. </div>
             <div className="para3">We earn customers and cherish bonds with them, helping them grow their business. Our expertise and ambitions merge together to propel corporations years ahead with disruptive technologies like Blockchain, AI, Digital Transformation, Data Analytics & more.</div>
 

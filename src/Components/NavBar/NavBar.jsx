@@ -1,27 +1,38 @@
 import React from 'react'
 import "./NavBar.scss"
-import { NavLink } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 
 
 import logo from "../../Assets/Logo.png"
+import Mobile from './Mobile'
 
 const NavBar = (props) => {
-  console.log("navbar=====", props)
+
+  const navigate = useNavigate()
+
+  const push = () => {
+    navigate('success');
+  }
 
   return (
-    <div className="navbar__container">
-      <div className="left">
-        <img src={logo} alt="" className="logo" />
-      </div>
-      <div className="right">
-        <NavLink onClick={props.homescroll} to="/" className="link">Home</NavLink>
-        <NavLink onClick={props.aboutscroll} to="/about" className="link">About</NavLink>
-        <NavLink onClick={props.servicescroll} to="/service" className="link">Products</NavLink>
-        <NavLink onClick={props.clientscroll} to="/client" className="link">Clients</NavLink>
-        <NavLink onClick={props.contactscroll} to="/contact" className="link">Contact</NavLink>
+    <>
+      <div className="navbar__container">
+        <div className="left">
+          <img src={logo} alt="" className="logo" />
+        </div>
+        <div className="right">
+          <NavLink onClick={props.homescroll} to="/" className="link">Home</NavLink>
+          <NavLink onClick={props.aboutscroll} to="/about" className="link">About</NavLink>
+          <NavLink onClick={push} to="/products" className="link">Products</NavLink>
+          <NavLink onClick={props.clientscroll} to="/client" className="link">Clients</NavLink>
+          <NavLink onClick={props.contactscroll} to="/contact" className="link">Contact</NavLink>
 
+        </div>
       </div>
-    </div>
+      <div className="mobile__nav">
+        <Mobile />
+      </div>
+    </>
   )
 }
 

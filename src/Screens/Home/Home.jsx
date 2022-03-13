@@ -14,7 +14,7 @@ const Home = (props) => {
       <img src={main} alt="" className="main__img" />
       <div className="data">
         <div className="text">Get a free consultation from an expert</div>
-        <button className="home__btn">Get Your Project Started</button>
+        <button className="home__btn">Get Your Product Started</button>
       </div>
       <img src={watsapp} alt="" className="watsapp" />
     </div>
