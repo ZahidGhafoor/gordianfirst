@@ -46,7 +46,7 @@
         height: 500px;
         display: flex;
         flex-direction: column;
-        gap:5rem;
+        gap:4rem;
         @media screen and (max-width:1080px){
           width: 100%;
           gap:2rem;
@@ -63,7 +63,7 @@
   
         .phone {
             background-color: rgb(0, 0, 0);
-            padding: 34px 35px 41px;
+            padding: 34px 35px 42px;
             border-radius: 6px;
             display: flex;
   

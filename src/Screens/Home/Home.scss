@@ -44,4 +44,19 @@
             font-weight: 700;
         }
     }
+    .watsapp{
+        height: 75px;
+        width: 75px;
+        position: fixed;
+        z-index: 300;
+        bottom: 10px;
+      //   font-size: 30px;
+      margin: auto;
+    //   border-radius: 50px;
+    //   background-color: white;
+      color: black;
+        right: 15px;
+        bottom: 20px;
+        cursor: pointer;
+    }
 }

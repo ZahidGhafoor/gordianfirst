@@ -2,6 +2,7 @@ import React from 'react'
 import "./Home.scss"
 
 // Imgs
+import watsapp from "../../Assets/watsapp.png"
 import main from "../../Assets/main2.jpg"
 import NavBar from '../../Components/NavBar/NavBar'
 
@@ -15,6 +16,7 @@ const Home = (props) => {
         <div className="text">Get a free consultation from an expert</div>
         <button className="home__btn">Get Your Project Started</button>
       </div>
+      <img src={watsapp} alt="" className="watsapp" />
     </div>
   )
 }

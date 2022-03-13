@@ -2,8 +2,10 @@ import React, { useRef } from 'react'
 import "./App.css"
 import NavBar from './Components/NavBar/NavBar'
 import About from './Screens/About/About'
+import Adress from './Screens/Adress/Adress'
 import Clients from './Screens/Clients/Clients'
 import Contact from './Screens/Contact/Contact'
+import Copy from './Screens/CopyRigh/Copy'
 import Home from './Screens/Home/Home'
 import Services from './Screens/Service/Services'
 
@@ -27,9 +29,11 @@ const App = () => {
     <>
       <Home home={home} homescroll={homescroll} aboutscroll={aboutscroll} servicescroll={servicescroll} clientscroll={clientscroll} contactscroll={contactscroll} />
       <About about={about} />
-      <Services service={service} />
+      {/* <Services service={service} /> */}
       <Clients client={client} />
+      <Adress />
       <Contact contact={contact} />
+      <Copy/>
 
 
     </>
