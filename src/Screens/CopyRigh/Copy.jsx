@@ -8,6 +8,14 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Copy = () => {
+    let func = function (...args) {
+        console.log(args);
+    }
+
+    func(3); // [3]
+    func(4, 5, 6, "jello"); // [4, 5, 6]
+
+
     return (
         <div className="copy__container">
             <div className="left">

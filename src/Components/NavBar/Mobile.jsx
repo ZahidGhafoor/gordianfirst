@@ -14,7 +14,6 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Mobile = (props) => {
-    console.log("mobile props are======", props);
     const [state, setState] = React.useState({
         right: false,
     });
