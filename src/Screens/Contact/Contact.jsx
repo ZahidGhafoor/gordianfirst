@@ -32,6 +32,7 @@ const Contact = (props) => {
     }
 
     const Validate = () => {
+
         const nameRegex = /^[A-Z ]{4,}$/i
         const emailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var messageregex = /^[a-zA-Z0-9 !@#$%^&*]{20,100}$/;
@@ -60,8 +61,6 @@ const Contact = (props) => {
     const done = async (event) => {
         Validate()
         event.preventDefault()
-
-
         const res = await mail(val)
         if (res.error != null) {
             console.log("something went wrong")
