@@ -19,7 +19,7 @@ const NavBar = (props) => {
           <img src={logo} alt="" className="logo" />
         </div>
         <div className="right">
-          <NavLink onClick={props.homescroll} to="/" className={pathname == "/" ? "activee" : "link"}>Home</NavLink>
+          <NavLink onClick={props.homescroll} to="/#home" className={hash == "#home" ? "activee" : "link"}>Home</NavLink>
           <NavLink onClick={props.aboutscroll} to="/#about" className={hash == "#about" ? "activee" : "link"}>About</NavLink>
           <NavLink to="/products" className={pathname == "/products" ? "activee" : "link"}>Products</NavLink>
           <NavLink onClick={props.clientscroll} to="/#clients" className={hash == "#clients" ? "activee" : "link"}>Clients</NavLink>

@@ -47,7 +47,6 @@ const App = () => {
               <Clients client={client} />
               <Adress />
               <Contact contact={contact} />
-              {/* <Services service={service} /> */}
             </>
           }
         />

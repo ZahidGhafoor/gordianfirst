@@ -13,15 +13,15 @@ const Home = (props) => {
     <div ref={props.home} className="home__container">
       <NavBar {...props} />
       <img src={main} alt="" className="main__img" />
-      <div className="data">
+      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" className="data">
         <div className="text">Get a free &nbsp;
 
           <Typical
 
             steps={[
-              'consult', 3000,
-              'advise', 3000,
-              'counsel', 3000,
+              'con', 3000,
+              'adv', 3000,
+              'cou', 3000,
               // 'suggestions', 2000,
             ]}
             loop={Infinity}

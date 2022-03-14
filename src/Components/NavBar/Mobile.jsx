@@ -68,7 +68,7 @@ const Mobile = (props) => {
                         <div className="burger" onClick={toggleDrawer(anchor, true)}>
 
                             <img src={logo} alt="" className="logo" />
-                            <MenuIcon className='iconss' />
+                            <div><MenuIcon className='iconss' /></div>
 
 
                         </div>
