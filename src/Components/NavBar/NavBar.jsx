@@ -22,7 +22,7 @@ const NavBar = (props) => {
           <NavLink onClick={props.homescroll} to="/#home" className={hash == "#home" ? "activee" : "link"}>Home</NavLink>
           <NavLink onClick={props.aboutscroll} to="/#about" className={hash == "#about" ? "activee" : "link"}>About</NavLink>
           <NavLink to="/products" className={pathname == "/products" ? "activee" : "link"}>Products</NavLink>
-          <NavLink onClick={props.clientscroll} to="/#clients" className={hash == "#clients" ? "activee" : "link"}>Clients</NavLink>
+          <NavLink onClick={props.clientscroll} to="/#clients" className={hash == "#clients" ? "activee" : "link"}>Testimonial</NavLink>
           <NavLink onClick={props.contactscroll} to="/#contact" className={hash == "#contact" ? "activee" : "link"}>Contact</NavLink>
 
         </div>

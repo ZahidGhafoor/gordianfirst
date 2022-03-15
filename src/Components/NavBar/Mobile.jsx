@@ -50,7 +50,7 @@ const Mobile = (props) => {
                 <NavLink onClick={() => {
                     toggleDrawer(anchor, false)
                     setTimeout(() => { props.clientscroll() }, 0);
-                }} to="/#clients" className="home">Clients</NavLink>
+                }} to="/#clients" className="home">Testimonials</NavLink>
                 <NavLink onClick={() => {
                     toggleDrawer(anchor, false)
                     setTimeout(() => { props.contactscroll() }, 0);
@@ -64,10 +64,10 @@ const Mobile = (props) => {
             <div>
                 {['right'].map((anchor) => (
                     <React.Fragment key={anchor}>
-                        <div className="burger" onClick={toggleDrawer(anchor, true)}>
+                        <div className="burger">
 
                             <img src={logo} alt="" className="logo" />
-                            <div><MenuIcon className='iconss' /></div>
+                            <div ><MenuIcon onClick={toggleDrawer(anchor, true)} className='iconss' /></div>
 
 
                         </div>

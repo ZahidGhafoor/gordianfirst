@@ -1,38 +1,123 @@
-.client__container{
-    max-width: 1200px;
-    margin: 3rem auto;
-    text-align: center;
-    .heading{
-        font-size: 50px;
+.client__container {
+  max-width: 1400px;
+  margin: 3rem auto;
+  text-align: center;
+  .heading {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 3rem 0;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 600px) {
+      font-size: 35px;
+    }
+  }
+  .para {
+    font-size: 25px;
+    color: gray;
+    margin: 1rem 0;
+    font-weight: 600;
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.slick-next {
+  // background: url("../../Assets/nexxt.svg")center
+  // center no-repeat !important;
+  right: -19px !important;
+  width: 35px !important;
+  height: 35px !important;
+  z-index: 300;
+
+  &::before {
+    color: black;
+  }
+}
+
+.slick-prev {
+  // background: url("../../Assets/prev.svg") center
+  //   center no-repeat !important;
+  width: 35px !important;
+  height: 35px !important;
+
+  left: -19px !important;
+  z-index: 300;
+
+  &::before {
+    color: black;
+  }
+}
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+}
+
+.slider {
+  //   background-color: #111319;
+  color: white;
+  //   height: 100vh;
+  padding: 2rem 3rem;
+  @media screen and (max-width: 600px) {
+    padding: 3rem 1.5rem;
+  }
+  .cards {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .card1 {
+      width: 300px;
+      margin: 2rem 0;
+      padding: 3rem 1rem;
+      //   box-shadow: 10px 10px 5px #aaaaaa;
+      border: 1px solid #aaaaaa;
+      border-radius: 5px;
+      position: relative;
+      padding-bottom: 1rem;
+      @media screen and (max-width: 600px) {
+        width: 270px;
+      }
+      .face {
+        height: 60px;
+        width: 60px;
+        border-radius: 99px;
+        object-fit: cover;
+        position: absolute;
+        left: 40%;
+        top: -30px;
+        z-index: 200;
+      }
+      .headingg {
         font-weight: 700;
-        margin: 3rem 0;
-    }
-    .para{
-        font-size: 17px;
+        padding-top: 12px;
+        color: black;
+      }
+      .paraa {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 700;
         color: gray;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
+        text-align: justify;
+      }
+      .name {
         font-weight: 600;
+        color: #807474;
+        font-size: 13px;
+        span {
+          color: brown;
+        }
+      }
     }
-    .imgs{
-       
-        display: grid;
-        grid-template-columns: auto auto auto;
-        margin: 1rem auto;
-        justify-content: space-evenly;
-           @media screen and (max-width:700px){
-            grid-template-columns: auto auto;
-
-
-        }
-           @media screen and (max-width:500px){
-            grid-template-columns: auto;
-
-
-        }
-
-        .img1{
-            height: 120px;
-            
-        }
-    }
+  }
 }
