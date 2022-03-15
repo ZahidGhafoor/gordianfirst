@@ -8,13 +8,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Copy = () => {
-    let func = function (...args) {
-        console.log(args);
+    let a = 2;
+
+    switch (a) {
+        case "1":
+            a = 1;
+            break;
+        case 1:
+            a = 'one';
+            break;
+        case 2:
+            a = 'two';
+            break;
+
+        default:
+            a = 'not found';
+            break;
     }
-
-    func(3); // [3]
-    func(4, 5, 6, "jello"); // [4, 5, 6]
-
+    console.log(`The value is ${a}`);
 
     return (
         <div className="copy__container">
