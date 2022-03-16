@@ -9,6 +9,7 @@ import Contact from "./Screens/Contact/Contact";
 import Copy from "./Screens/CopyRigh/Copy";
 import Home from "./Screens/Home/Home";
 import Services from "./Screens/Service/Services";
+import Test from "./Screens/Test/Test";
 
 const App = () => {
   const home = useRef(null);
@@ -29,31 +30,32 @@ const App = () => {
     contact.current.scrollIntoView({ behavior: "smooth", block: "start" });
 
   return (
-    <>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Home
-                home={home}
-                homescroll={homescroll}
-                aboutscroll={aboutscroll}
-                servicescroll={servicescroll}
-                clientscroll={clientscroll}
-                contactscroll={contactscroll}
-              />
-              <About about={about} />
-              <Clients client={client} />
-              <Adress />
-              <Contact contact={contact} />
-            </>
-          }
-        />
-        <Route path="/products" element={<Services />} />
-      </Routes>
-      <Copy />
-    </>
+    // <>
+    //   <Routes>
+    //     <Route
+    //       path="/"
+    //       element={
+    //         <>
+    //           <Home
+    //             home={home}
+    //             homescroll={homescroll}
+    //             aboutscroll={aboutscroll}
+    //             servicescroll={servicescroll}
+    //             clientscroll={clientscroll}
+    //             contactscroll={contactscroll}
+    //           />
+    //           <About about={about} />
+    //           <Clients client={client} />
+    //           <Adress />
+    //           <Contact contact={contact} />
+    //         </>
+    //       }
+    //     />
+    //     <Route path="/products" element={<Services />} />
+    //   </Routes>
+    //   <Copy />
+    // </>
+    <Test />
   );
 };
 

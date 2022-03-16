@@ -9,6 +9,16 @@ import NavBar from '../../Components/NavBar/NavBar'
 
 const Home = (props) => {
   console.log("props are=====", props);
+
+  const val = '5'
+  const val2 = "hello"
+
+  let sum = String(val2) + val
+
+  console.log("The value of addition is", sum);
+
+
+
   return (
     <div ref={props.home} className="home__container">
       <NavBar {...props} />
