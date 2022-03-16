@@ -1,62 +1,67 @@
-.home__container{
-    height: 100vh;
-    .main__img{
-        height: 100%;
-        background-position: center;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
+.home__container {
+  height: 100vh;
+  .main__img {
+    height: 100%;
+    background-position: center;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .data {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    max-width: 800px;
+    @media screen and (max-width: 1200px) {
+      max-width: 600px;
     }
-    .data{
-        color: white;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        max-width: 800px;
-        @media screen and (max-width:1200px){
-            max-width: 600px;
-        }
-        @media screen and (max-width:700px){
-            max-width: 370px;
-        left: 5%;
-
-        }
-        .text{
-            font-size: 71px;
-            font-weight: 500;
-            @media screen and (max-width:800px){
-                font-size: 47px;
-
-            }
-        }
-        .home__btn{
-            font-size: 19px;
-            text-decoration: none;
-            outline: none;
-            height: 55px;
-            border-radius: 50px;
-            margin-top: 2rem;
-            padding: 0 25px;
-            color: white;
-            border: none;
-            background-color: #007bff;
-            border: 2px solid white;
-            font-weight: 700;
-        }
+    @media screen and (max-width: 700px) {
+      max-width: 370px;
+      left: 5%;
     }
-    .watsapp{
-        height: 75px;
-        width: 75px;
-        position: fixed;
-        z-index: 300;
-        bottom: 10px;
-      //   font-size: 30px;
-      margin: auto;
+    .text {
+      font-size: 71px;
+      font-weight: 500;
+      typical {
+        color: red;
+      }
+      @media screen and (max-width: 800px) {
+        font-size: 47px;
+      }
+    }
+    .home__btn {
+      font-size: 19px;
+      text-decoration: none;
+      outline: none;
+      height: 55px;
+      border-radius: 50px;
+      margin-top: 2rem;
+      padding: 0 25px;
+      color: white;
+      border: none;
+      background-color: #007bff;
+      border: 2px solid white;
+      font-weight: 700;
+    }
+  }
+  .watsapp {
+    height: 75px;
+    width: 75px;
+    position: fixed;
+    z-index: 300;
+    bottom: 10px;
+    //   font-size: 30px;
+    margin: auto;
     //   border-radius: 50px;
     //   background-color: white;
-      color: black;
-        right: 15px;
-        bottom: 20px;
-        cursor: pointer;
-    }
+    color: black;
+    right: 15px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+}
+
+.styles_typicalWrapper__1_Uvh {
+  color: goldenrod;
 }

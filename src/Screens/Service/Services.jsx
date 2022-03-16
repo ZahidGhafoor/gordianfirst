@@ -11,6 +11,7 @@ import s7 from "../../Assets/s7.jpg";
 import s8 from "../../Assets/s8.jpg";
 import s9 from "../../Assets/s9.jpg";
 import s10 from "../../Assets/s10.jpg";
+import NavBar from '../../Components/NavBar/NavBar';
 
 const arr = [
     {
@@ -105,6 +106,8 @@ const arr = [
 const Services = (props) => {
     return (
         <>
+            <NavBar {...props} />
+
             <div className="product__container">
                 <div className="heading">
                     BROWSE TOP SELLING PRODUCTS
@@ -112,9 +115,9 @@ const Services = (props) => {
 
                 <div className="cards">
                     {
-                        arr.map((data) => {
+                        arr.map((data, index) => {
                             return (
-                                <div className="card">
+                                <div key={index} className="card">
                                     <img src={data.img} alt="" className="card__img" />
                                     <div className="card__heading">{data.heading}</div>
                                     <div className="card__brand">{data.brand}</div>

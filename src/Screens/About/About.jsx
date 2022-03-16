@@ -33,7 +33,7 @@ const About = (props) => {
         <div className="right">
           <img src={about} alt="" className="about__img" />
         </div>
-        <div className="left">
+        <div data-aos="fade-up" data-aos-duration="1000" className="left">
           {/* <LightSpeed right > */}
           <div className="heading">
             ABOUT US

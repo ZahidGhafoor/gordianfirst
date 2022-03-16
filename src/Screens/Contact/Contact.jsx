@@ -32,6 +32,7 @@ const Contact = (props) => {
     }
 
     const Validate = () => {
+
         const nameRegex = /^[A-Z ]{4,}$/i
         const emailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         var messageregex = /^[a-zA-Z0-9 !@#$%^&*]{20,100}$/;
@@ -60,8 +61,6 @@ const Contact = (props) => {
     const done = async (event) => {
         Validate()
         event.preventDefault()
-
-
         const res = await mail(val)
         if (res.error != null) {
             console.log("something went wrong")
@@ -75,10 +74,12 @@ const Contact = (props) => {
         <>
             <div ref={props.contact} className="contact__container">
                 <hr />
-                <div className="headingg">Contact</div>
-                <div className="para">Share your idea with us and let's get started right now!</div>
+                <div data-aos="fade-up" data-aos-duration="1000" >
+                    <div className="headingg">Contact</div>
+                    <div className="para">Share your idea with us and let's get started right now!</div>
+                </div>
                 <div className="bottom">
-                    <div className="left">
+                    <div data-aos="fade-up" data-aos-duration="1000" className="left">
                         <div className="phone">
                             <div className="img">
                                 <PhoneIcon className="icon" />
@@ -112,7 +113,7 @@ const Contact = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="right">
+                    <div data-aos="fade-up" data-aos-duration="1000" className="right">
                         <div className="heading">
                             I'm always open to discussing product <br /> <span>design work or partnerships.</span>
                         </div>

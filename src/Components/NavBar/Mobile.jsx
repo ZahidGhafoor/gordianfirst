@@ -13,7 +13,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CancelIcon from '@mui/icons-material/Cancel';
 import CloseIcon from '@mui/icons-material/Close';
 
-const Mobile = () => {
+const Mobile = (props) => {
     const [state, setState] = React.useState({
         right: false,
     });
@@ -38,12 +38,23 @@ const Mobile = () => {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <div className="mobile__container">
-                <NavLink to="/" className="home">Home</NavLink>
-                <NavLink to="/" className="home">About</NavLink>
-                <NavLink to="/" className="home">Products</NavLink>
-                <NavLink to="/" className="home">Clients</NavLink>
-                <NavLink to="/products" className="home">Contact</NavLink>
-                <div className="home"><CloseIcon className='icons' /></div>
+                <NavLink onClick={() => {
+                    toggleDrawer(anchor, false)
+                    setTimeout(() => { props.homescroll() }, 0);
+                }} to="/" className="home">Home</NavLink>
+                <NavLink onClick={() => {
+                    toggleDrawer(anchor, false)
+                    setTimeout(() => { props.aboutscroll() }, 0);
+                }} to="/#about" className="home">About</NavLink>
+                <NavLink to="/products" className="home">Products</NavLink>
+                <NavLink onClick={() => {
+                    toggleDrawer(anchor, false)
+                    setTimeout(() => { props.clientscroll() }, 0);
+                }} to="/#clients" className="home">Testimonials</NavLink>
+                <NavLink onClick={() => {
+                    toggleDrawer(anchor, false)
+                    setTimeout(() => { props.contactscroll() }, 0);
+                }} to="/#contact" className="home">Contact</NavLink>
             </div>
 
         </Box>
@@ -53,12 +64,12 @@ const Mobile = () => {
             <div>
                 {['right'].map((anchor) => (
                     <React.Fragment key={anchor}>
-                        <div className="burger" onClick={toggleDrawer(anchor, true)}>
-            
-                                <img src={logo} alt="" className="logo" />
-                                <MenuIcon className='iconss' />
+                        <div className="burger">
 
-                    
+                            <img src={logo} alt="" className="logo" />
+                            <div ><MenuIcon onClick={toggleDrawer(anchor, true)} className='iconss' /></div>
+
+
                         </div>
                         <SwipeableDrawer
                             anchor={anchor}
