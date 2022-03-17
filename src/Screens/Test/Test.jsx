@@ -1,60 +1,64 @@
-import React, { useState } from 'react'
-
-
-const user = {
-    name: "zahid",
-    class: "11",
-    occupation: "developer"
-}
-
-let key;
-
-for (key in user) {
-    console.log(user[key]);
-}
-
-const arr = [8, 8, 6, 6, 55, 6, 5, 65, 6, 56, 5, 6, 5, 65, 6, 5]
-// for (val of arr) { console.log(val) }
+import React from "react";
+import { useState, useEffect } from "react";
 
 const Test = () => {
+  const [checkboxes, setCheckboxes] = useState([
+    {
+      name: "check-box-1",
+      checked: false,
+    },
+    {
+      name: "check-box-2",
+      checked: false,
+    },
+    {
+      name: "check-box-3",
+      checked: false,
+    },
+    {
+      name: "check-box-4",
+      checked: false,
+    },
+    {
+      name: "check-box-5",
+      checked: false,
+    },
+  ]);
+  const [check, setCheck] = useState("");
 
-    const [enterData, setEnterData] = useState({
-        salutation: "mr",
-        ocupation: ""
-    })
+  const handleChange = (e) => {
+    let { name, checked } = e.target;
+    setCheck(checked ? name : "");
+  };
 
+  //   const handleChange = (event, i) => {
+  //     let { checked } = event.target;
+  //     let arr = [...checkboxes];
 
+  //     arr[i].checked = checked;
 
+  //     setCheckboxes(arr);
 
-    return (
-        <>
-            <div className="main">
-                {/* <label for="salutation">Choose a salutation:</label>
-                <select className="first__name" name="salutation" onChange={SelectEvent} value={enterData.salutation}>
-                    <option value="mr">Mr.
-                    </option>
-                    <option value="ms">
-                        Ms.</option>
-                    <option value="mrs">Mrs.</option>
-                </select>
-                <h3>you select "{enterData.salutation}"</h3>
-                <hr />
-                <label for="ocupation">Choose your occupation</label>
+  //     console.log("jkdjsk", arr);
+  //   };
 
-                <select className="first__name" name="ocupation" onChange={SelectEvent} value={enterData.ocupation}>
-                    <option value="web">WEB DEVELOPER
-                    </option>
-                    <option value="app">
-                        APP DEVELOPER</option>
-                    <option value="auto">AUMATION ENGINEER</option>
-                </select>
-                <h3>you select "{enterData.ocupation}"</h3>
-                <hr /> */}
+  return (
+    <>
+      <div>
+        {checkboxes.map((item, i) => (
+          <label key={i}>
+            {item.name}
+            <input
+              type="checkbox"
+              name={item.name}
+              checked={check === item.name}
+              onChange={handleChange}
+            />
+          </label>
+        ))}
+      </div>
+    </>
+  );
+};
 
-
-            </div>
-        </>
-    )
-}
-
-export default Test
+export default Test;
