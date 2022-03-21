@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cadbc5ea1.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         * {
@@ -17,7 +18,8 @@
             height: 100vh;
             background-color: rgba(135, 207, 235, 0.301);
         }
-        .header{
+
+        .header {
             position: relative;
             padding-top: 3rem;
         }
@@ -29,11 +31,12 @@
         }
 
         .name {
-            background-color: lightblue;
+            background-color: rgba(5, 82, 128, 255);
             font-size: 35px;
             font-weight: 700;
             padding: 12px 3rem;
             font-family: cursive;
+            color: white;
         }
 
         .title {
@@ -44,11 +47,12 @@
             text-align: center;
             padding: 3px 0;
             border-radius: 50px;
-           position: absolute;
-           bottom: -9px;
-           left: 44px;
+            position: absolute;
+            bottom: -9px;
+            left: 44px;
         }
-        .body__upper{
+
+        .body__upper {
             display: flex;
             flex-direction: column;
             gap: 2rem;
@@ -57,19 +61,67 @@
             font-size: 15px;
             font-weight: 500;
         }
-        .para1{
+
+        .para1 {
             color: red;
         }
-        .para2{
+
+        .para2 {
             color: black;
         }
-        .para3{
+
+        .para3 {
             color: green;
         }
-        .first{
+
+        .social_container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 2rem;
+            margin-top: 4rem;
+            font-weight: bold;
+
+        }
+
+        .social_container .box {
+            display: flex;
+            gap: .5rem;
+            border-bottom: 1px solid orange;
+            width: fit-content;
+            /* color: red; */
+        }
+
+        .social_container .box .logo {
+            background-color: rgba(5, 82, 128, 255);
+            padding: 5px 5px 5px 5px;
+            width: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px 3px 0 0;
+        }
+        .social_container .box .logo i {
+            color: white;
+        }
+
+        .social_links{
             display: flex;
             gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;            
+        }
+        .social_links .link{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
             align-items: center;
+            border-radius: 50rem;
+            width: 20px;
+            height: 20px;
+        }
+        .social_links .link i{
+            color: white;
         }
     </style>
 </head>
@@ -89,10 +141,70 @@
             <div class="para3">KP Waste Aluminium Smelting LLC <br>Old Industrial Area, Umm Al Quwain</div>
         </div>
 
-        <div class="bottom__para">
-            <div class="first">
-                <img src="../Assets/call.png" width="40" height="40">
-                <div class="text">+92 300 4050673</div>
+        <div class="social_container">
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="number">
+                    +971528774900
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="number">
+                    (04) 3200120
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-envelope-open"></i>
+                </div>
+                <div class="number">
+                    info@jazmangroup.com
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="number">
+                    www.jazmangroup.com
+                </div>
+            </div>
+            <div class="box">
+                <div class="logo">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="number">
+                    SUIT 405, NGI House, Port Saeed, Deiro, Dubai, United Arab Emirates
+                </div>
+            </div>
+        </div>
+
+        <div class="social_links">
+            <div class="link" style="background-color: #3c3f97;">
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="link" style="background-color: #00aff0;">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="link" style="background-color: #feb04e;">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="link" style="background-color: #a13336;">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="link" style="background-color: #308a4d;">
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <div class="link" style="background-color: #2564b1;">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="link" style="background-color: #fecc5c;">
+                <i class="fa-brands fa-snapchat"></i>
             </div>
         </div>
     </div>

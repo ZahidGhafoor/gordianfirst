@@ -1,0 +1,104 @@
+.opening__container {
+  max-width: 1140px;
+  margin: 3rem auto;
+
+  .header {
+    .heading {
+      font-size: 50px;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .para {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 30px;
+    }
+  }
+  .openings {
+    .heading {
+      font-size: 50px;
+      text-align: center;
+      margin: 6rem 0;
+      font-weight: 500;
+    }
+    .jobs {
+    //   height: 80vh;
+    //   overflow: scroll;
+      .job1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        .left {
+          display: flex;
+          flex-direction: column;
+          gap: 3px;
+          .upper {
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.527);
+          }
+          .head {
+            font-weight: 500;
+            font-size: 19px;
+            color: black;
+          }
+        }
+        .right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 15px;
+          .btn1 {
+            height: 50px;
+            width: 160px;
+            outline: none;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: gray;
+            font-size: 18px;
+            background: white;
+            border: 1px solid #80808052;
+          }
+        }
+      }
+    }
+  }
+
+  .dream {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 10rem;
+    .headingg {
+      font-size: 40px;
+      text-align: center;
+      font-weight: 500;
+    //   max-width: 500px;
+      margin: 0 auto;
+    }
+    .paraa {
+          text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+          max-width: 500px;
+      margin: 0 auto;
+
+
+    }
+    .contact {
+        height: 50px;
+            width: 160px;
+            outline: none;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: gray;
+            font-size: 18px;
+            background: white;
+            border: 1px solid #80808052;
+    }
+  }
+}

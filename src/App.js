@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Career from "./Components/Careers/Career";
 import NavBar from "./Components/NavBar/NavBar";
 import About from "./Screens/About/About";
 import Adress from "./Screens/Adress/Adress";
@@ -9,7 +10,6 @@ import Contact from "./Screens/Contact/Contact";
 import Copy from "./Screens/CopyRigh/Copy";
 import Home from "./Screens/Home/Home";
 import Services from "./Screens/Service/Services";
-import Test from "./Screens/Test/Test";
 
 const App = () => {
   const home = useRef(null);
@@ -55,7 +55,8 @@ const App = () => {
     //   </Routes>
     //   <Copy />
     // </>
-    <Test />
+
+    <Career />
   );
 };
 
