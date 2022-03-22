@@ -1,0 +1,120 @@
+.details__container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem 10rem;
+  .left {
+    width: 50%;
+    .heading {
+      font-size: 2.15em;
+      font-weight: 500;
+                color: #2b215f;
+
+    }
+    .min__details {
+      line-height: 14px;
+      margin: 0;
+      cursor: default;
+      display: block;
+      font-weight: 300;
+      text-transform: capitalize;
+            color: #2b215f;
+
+      margin-top: 5px;
+    }
+
+    .details {
+      margin: 3rem 0;
+      line-height: 28px;
+      .details__heading {
+        font-size: 15px;
+        font-weight: bold;
+                        color: #2b215f;
+
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+            list-style-type: disclosure-closed;
+                color: #2b215f;
+    opacity: 0.8;
+
+        margin-left: 35px;
+
+        li {
+          padding-bottom: 3px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .right {
+      width: 50%;
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+      .right__heading {
+      font-size: 2.5em;
+      font-weight: 400;
+                color: #2b215f;
+
+    }
+    .inputs{
+        margin-top: 3rem;
+    }
+    .first{
+        margin-bottom: 2rem;
+        .MuiTextField-root{
+            width: 100% !important;
+        }
+        .MuiInputLabel-root{
+                          color:rgba(43, 33, 95, 0.4);
+                          opacity: 0.6;
+
+            font-weight: 700;
+        }
+        .MuiInputLabel-root.Mui-focused{
+            font-size: 18px;
+            font-weight: 700;
+    color: #2b215f;
+        }
+
+        .MuiInput-root::before{
+         border-bottom: 2px solid rgba(43, 33, 95, 0.4);
+        }
+        .MuiInput-root::after{
+            border-bottom: 2px solid rgba(43, 33, 95, 0.4);
+
+        }
+    }
+
+    .attachment{
+        font-weight: 500;
+        color: gray;
+    }
+
+    .submit{
+        font-weight: 500;
+            line-height: 1;
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 1em 3.21em;
+            text-decoration: none;
+            text-transform: uppercase;
+            outline: none;
+            background: linear-gradient(
+              90deg,
+              rgba(14, 161, 118, 1) 0%,
+              rgba(7, 145, 195, 1) 32%,
+              rgba(6, 146, 191, 1) 44%,
+              rgba(0, 134, 255, 1) 63%,
+              rgba(87, 35, 157, 1) 100%
+            );
+            color: #fff;
+            border-radius: 1.92em;
+            border: none;
+            font-size: 14px;
+            -webkit-transition: all 0.6s ease-out 0s;
+    }
+  }
+}
