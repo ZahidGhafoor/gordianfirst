@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.scss";
-import header from "../../../Assets/carrer.svg";
+import header from "../../../Assets/carrer2.svg";
 
 const Header = () => {
   return (

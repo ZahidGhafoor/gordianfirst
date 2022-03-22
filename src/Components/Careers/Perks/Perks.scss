@@ -1,0 +1,112 @@
+.perks__container {
+  margin: 8rem 0;
+  .heading {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #2b215fcb;
+    margin: 0 auto;
+  }
+  .para {
+    text-align: center;
+    font-size: 18px;
+    // font-weight: 200;
+    line-height: 27px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.6;
+    color: #2b215f;
+  }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1275px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    .card1 {
+      padding: 1.25rem;
+      background-clip: border-box;
+      background-color: #fff;
+      border: 0 !important;
+      border-radius: 20px;
+      box-shadow: 10px 13px 25px 0 rgb(0 0 0 / 10%);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      min-height: 250px;
+      min-width: 0;
+      position: relative;
+      width: 250px;
+    }
+
+    .card__img {
+      height: 80px;
+    }
+
+    .title {
+      font-size: 22px;
+      //   padding: 10px;
+      font-weight: 500;
+      color: #2b215f;
+    }
+
+    .card__para {
+      font-size: 18px;
+      opacity: 0.6;
+      color: #2b215f;
+      text-align: ce;
+    }
+  }
+}
+
+.dream {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  .headingg {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    color: #2b215fcb;
+    margin: 0 auto;
+  }
+  .paraa {
+    text-align: center;
+    font-size: 18px;
+    // font-weight: 200;
+    line-height: 27px;
+    max-width: 500px;
+    margin: 0 auto;
+    opacity: 0.6;
+    color: #2b215f;
+  }
+  .contact {
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
+    padding: 1em 3.21em;
+    text-decoration: none;
+    text-transform: uppercase;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgba(14, 161, 118, 1) 0%,
+      rgba(7, 145, 195, 1) 32%,
+      rgba(6, 146, 191, 1) 44%,
+      rgba(0, 134, 255, 1) 63%,
+      rgba(87, 35, 157, 1) 100%
+    );
+    color: #fff;
+    border-radius: 1.92em;
+    border: none;
+    font-size: 14px;
+    -webkit-transition: all 0.6s ease-out 0s;
+  }
+}
